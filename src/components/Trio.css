@@ -1,0 +1,56 @@
+.trio {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.trio-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.trio-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* height: vh; */
+  /* max-height: 530px; */
+  width: 100%;
+  max-width: 700px;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+  padding-top: 20px;
+  font-family: 'Lato', sans-serif;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.trio-img {
+  height: 80px;
+  width: 80px;
+  display: block;
+  margin: 0 auto;
+}
+
+.trio-link {
+  align-self: left;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 20px;
+  position: absolute;
+  bottom: 0;
+  transition: 0.5s ease;
+}
+
+.trio-link:hover {
+  transform: translateY(-3px) scale(1.1);
+  cursor: pointer;
+}
+
+.trio-info .title {
+  margin-top: 30px;
+}
