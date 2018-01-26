@@ -1,0 +1,66 @@
+.header {
+  color: white;
+  height: 460px;
+  position: relative;
+}
+
+.header .angle {
+  background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+  /* background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%); */
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  transform: skewY(-8deg);
+  transform-origin: 0;
+  width: 100%;
+}
+
+.hero-info {
+  display: flex;
+  font-family: 'Source Sans Pro', sans-serif;
+  height: calc(100% - 52px);
+  position: relative;
+  width: 100%;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.title, .subtitle {
+  color: inherit;
+}
+
+.info-container {
+  height: 75%;
+  margin: 0 auto;
+  width: 90%;
+  position: relative;
+  color: white;
+}
+
+.body {
+  color: #333;
+  font-weight: lighter;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.hero-button {
+  border: none;
+}
+
+.signup-button {
+  background-color: #3ddc97;
+  color: white;
+}
+
+.login-button {
+  margin-left: 10px;
+  color: white;
+  background-color: #b721ff;
+}
+
+.login-button:hover, .signup-button:hover {
+  color: white;
+}
