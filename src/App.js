@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import Hero from './components/Hero';
-import Trio from './components/Trio';
+import { Route } from 'react-router-dom';
+import Landing from './components/Landing';
+import Registration from './components/Registration';
 
 export default class App extends Component {
   render() {
     return (
       <div className="App">
-        <Hero />
-        <Trio />
+        <Route exact path="/" component={Landing} />
+        <Route path="/registration" component={Registration} />
       </div>
     );
   }

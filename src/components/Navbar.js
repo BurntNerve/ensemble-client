@@ -1,13 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 
-export default function Navbar(props) {
+export default function Navbar() {
   return (
     <nav className="navbar is-transparent">
       <div className="navbar-brand">
-        <a className="navbar-item" href="#">
+        <Link className="navbar-item" to="/">
           <h1 className="logo">Ensemble</h1>
-        </a>
+        </Link>
         <div
           className="navbar-burger burger"
           data-target="navbarExampleTransparentExample"
@@ -20,34 +21,18 @@ export default function Navbar(props) {
 
       <div id="navbarExampleTransparentExample" className="navbar-menu">
         <div className="navbar-start">
-          <a className="navbar-item has-text-white" href="#">
+          <Link to="/" className="navbar-item has-text-white">
             Home
-          </a>
-          <div className="navbar-item has-dropdown is-hoverable">
-            <a className="navbar-link has-text-white" href="#">
-              Factions
-            </a>
-            <div className="navbar-dropdown is-boxed">
-              <a className="navbar-item" href="#">
-                Actor
-              </a>
-              <a className="navbar-item" href="#">
-                Crew
-              </a>
-              <a className="navbar-item" href="#">
-                Designer
-              </a>
-              <a className="navbar-item" href="#">
-                Director
-              </a>
-              <a className="navbar-item" href="#">
-                Playwright
-              </a>
-              <a className="navbar-item" href="#">
-                Producer
-              </a>
-            </div>
-          </div>
+          </Link>
+          <Link className="navbar-item has-text-white" to="/">
+            Factions
+          </Link>
+          <Link className="navbar-item has-text-white" to="/">
+            Projects
+          </Link>
+          <Link className="navbar-item has-text-white" to="/">
+            Funding
+          </Link>
         </div>
 
         <div className="navbar-end">
@@ -58,7 +43,7 @@ export default function Navbar(props) {
                   className="bd-tw-button button nav-button gradient-text"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="#"
+                  href="https://github.com/brootroot"
                 >
                   <span className="icon">
                     <i className="fab fa-github" />

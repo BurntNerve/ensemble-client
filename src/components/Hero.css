@@ -4,15 +4,18 @@
   position: relative;
 }
 
-.header .angle {
-  background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
-  /* background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%); */
+.angle {
   height: 100%;
   overflow: hidden;
   position: absolute;
   transform: skewY(-8deg);
   transform-origin: 0;
   width: 100%;
+}
+
+.header .angle {
+  background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+  /* background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%); */
 }
 
 .hero-info {

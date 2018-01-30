@@ -11,3 +11,19 @@ body {
 .button:hover {
   transform: translateY(-3px);
 }
+
+.is-green {
+  color: #3ddc97;
+}
+
+.is-orange {
+  color: #f3c14d;
+}
+
+.is-blue {
+  color: #70b6f7;
+}
+
+.is-purple {
+  color: #a448f6;
+}
