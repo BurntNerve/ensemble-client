@@ -4,7 +4,7 @@ import conversation from '../images/conversation.svg';
 import bulb from '../images/bulb.svg';
 import saving from '../images/saving.svg';
 
-export default function Trio(props) {
+export default function Trio() {
   return (
     <section className="trio">
       <div className="container">
@@ -21,7 +21,7 @@ export default function Trio(props) {
               Search within your community and find out who&apos;s nearby. The
               relationships you form could span multiple projects.
             </p>
-            <a className="trio-link is-green" href="#">
+            <a className="trio-link is-green" href="/">
               Discover your faction &gt;
             </a>
           </div>
@@ -36,7 +36,7 @@ export default function Trio(props) {
               you&apos;ve started rehearsals, Directors can post notes for every
               night on your project page and reach out to individual actors.
             </p>
-            <a className="trio-link is-blue" href="#">
+            <a className="trio-link is-blue" href="/">
               Create a new project &gt;
             </a>
           </div>
@@ -52,7 +52,7 @@ export default function Trio(props) {
               from it&apos;s profile and and they&apos;ll be listed on the
               profile page as a producer.
             </p>
-            <a className="trio-link is-orange" href="#">
+            <a className="trio-link is-orange" href="/">
               Reach out to investors &gt;
             </a>
           </div>

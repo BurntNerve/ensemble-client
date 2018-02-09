@@ -1,32 +1,11 @@
-.registrationForm {
-  /* background-color: red; */
-  height: 920px;
-  position: absolute;
-  width: 100vw;
+/* .registrationForm {
   display: flex;
-  align-items: center;
   justify-content: center;
-  top: 0;
-}
+} */
 
-.formBorder {
+/* .formHolder {
   width: 100%;
-  max-width: 500px;
-  height: 550px;
+  max-width: 550px;
+  padding: 20px;
   background-color: white;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* border: 3px solid white; */
-}
-
-.formHolder {
-  height: 100%;
-  width: 100%;
-  /* background-color: red; */
-  border-radius: 20px;
-  /* box-sizing: border-box; */
-  background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
-  ;
-}
+} */
