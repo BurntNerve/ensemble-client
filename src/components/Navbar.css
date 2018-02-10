@@ -1,16 +1,16 @@
 .logo {
-  font-family: 'Supermercado One', cursive;
+  font-family: "Supermercado One", cursive;
   font-size: 24px;
 }
 
 .navbar {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   background-color: inherit;
   color: white;
 }
 
 .header {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .is-green {
@@ -29,6 +29,14 @@
 
 .nav-button:hover {
   background-color: white;
-  color: #4E148C;
+  color: #4e148c;
   border: 1px solid white;
+}
+
+@media only screen and (max-width: 1023px) {
+  #navbar {
+    position: absolute;
+    width: 100vw;
+    z-index: 100;
+  }
 }

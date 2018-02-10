@@ -3,6 +3,7 @@ import * as actions from '../actions';
 const initialState = {
   activeSignUp: false,
   activeLogIn: false,
+  activeNavBar: false,
 };
 
 export const reducer = (state = initialState, action) => {
@@ -16,6 +17,11 @@ export const reducer = (state = initialState, action) => {
     return Object.assign({}, state, {
       ...state,
       activeLogIn: !state.activeLogIn,
+    });
+  } else if (action.type === actions.TOGGLE_NAV_BAR) {
+    return Object.assign({}, state, {
+      ...state,
+      activeNavBar: !state.activeNavBar,
     });
   }
   return state;
