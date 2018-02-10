@@ -7,12 +7,21 @@ import Footer from './Footer';
 import Modal from './Modal';
 import RegistrationForm from './RegistrationForm';
 
-import { toggleSignUpModal } from '../actions';
+import { toggleSignUpModal, toggleLogInModal } from '../actions';
 
 import './Landing.css';
 
 export class Landing extends React.Component {
   toggleSignUpModal() {
+    this.props.dispatch(toggleSignUpModal());
+  }
+
+  toggleLogInModal() {
+    this.props.dispatch(toggleLogInModal());
+  }
+
+  toggleBoth() {
+    this.props.dispatch(toggleLogInModal());
     this.props.dispatch(toggleSignUpModal());
   }
 
@@ -35,11 +44,18 @@ export class Landing extends React.Component {
           <Button
             text="Login"
             newClasses="is-rounded hero-button login-button"
+            clickFunction={() => this.toggleLogInModal()}
           />
         </Hero>
         <Modal
-          newClasses={`${this.props.activeSignUp ? 'is-active' : 'not-active'}`}
+          newClasses={`${this.props.activeSignUp ? 'is-active' : ''}`}
           clickFunction={() => this.toggleSignUpModal()}
+        >
+          <RegistrationForm signUp />
+        </Modal>
+        <Modal
+          newClasses={`${this.props.activeLogIn ? 'is-active' : ''}`}
+          clickFunction={() => this.toggleLogInModal()}
         >
           <RegistrationForm />
         </Modal>
@@ -52,6 +68,7 @@ export class Landing extends React.Component {
 
 const mapStateToProps = state => ({
   activeSignUp: state.activeSignUp,
+  activeLogIn: state.activeLogIn,
 });
 
 export default connect(mapStateToProps)(Landing);

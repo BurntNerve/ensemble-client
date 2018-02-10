@@ -2,6 +2,7 @@ import * as actions from '../actions';
 
 const initialState = {
   activeSignUp: false,
+  activeLogIn: false,
 };
 
 export const reducer = (state = initialState, action) => {
@@ -10,6 +11,11 @@ export const reducer = (state = initialState, action) => {
     return Object.assign({}, state, {
       ...state,
       activeSignUp: !state.activeSignUp,
+    });
+  } else if (action.type === actions.TOGGLE_LOG_IN_MODAL) {
+    return Object.assign({}, state, {
+      ...state,
+      activeLogIn: !state.activeLogIn,
     });
   }
   return state;
